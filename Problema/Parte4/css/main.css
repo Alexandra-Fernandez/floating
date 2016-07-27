@@ -1,18 +1,31 @@
-.clearfix {
-  overflow: auto;
-  border: 1px solid black;
+.caja {
+	width: 600px;
+	border: 1px solid #CCC;
 }
-.caja1 {
-	background-color: yellow;
-}
-.caja2 {
-	background-color: blue;
-}
-.caja3 {
-	background-color: red;
-}
+
 .bloque {
 	width: 25%;
 	height: 100px;
 	float: left;
+}
+
+.amarillo {
+	background-color: #FFFF00;
+}
+
+.azul {
+	background-color: #3A81BA;
+}
+
+.rojo {
+	background-color: #ED2251;
+}
+
+.clearfix:before, .clearfix:after {
+   content: " ";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
 }
